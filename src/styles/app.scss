@@ -39,7 +39,10 @@ a {
   }
 
   //navigation
-
+  .row {
+    display: flex;
+    padding: 0.5rem;
+  }
   .logo {
     font-size: 2rem;
   }
