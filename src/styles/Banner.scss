@@ -5,11 +5,17 @@
   .row {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    .HomePic {
+    }
     h2 {
       font-size: 3rem;
       line-height: 4.2rem;
       z-index: 10;
       mix-blend-mode: diffrence;
     }
+  }
+  .firstPageContainer {
+    height: 90vh;
   }
 }

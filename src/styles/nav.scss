@@ -1,33 +1,25 @@
 $navFont: 2rem;
 
 .Nav {
-  position: fixed;
   width: 100%;
   height: 128px;
   z-index: 4;
+  font-size: $navFont;
   @include media("<=phone") {
     height: 96px;
   }
-  .logo {
-    font-size: $navFont;
+  &_logo {
     letter-spacing: 0.5rem;
   }
-
-  .hamburger {
-    font-size: $navFont;
-  }
-
-  .navInfo {
-    font-size: $navFont;
-
+  &_Info {
     display: none;
   }
 
-  .navInfo > * {
+  &_Info > * {
     margin-right: 1rem;
   }
 
-  .hamburger {
+  &_hamburger {
     width: 25px;
     cursor: pointer;
     @include media("<=phone") {
@@ -43,8 +35,7 @@ $navFont: 2rem;
     }
   }
 
-  .Shop {
-    font-size: $navFont;
+  &_Shop {
     display: none;
   }
 }
