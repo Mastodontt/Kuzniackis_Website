@@ -12,7 +12,10 @@ $navFont: 1.7rem;
     letter-spacing: 0.5rem;
   }
   &_Info {
-    display: none;
+    display: flex;
+    @include media("<=phone") {
+      display: none;
+    }
   }
 
   &_Info > * {
@@ -22,13 +25,15 @@ $navFont: 1.7rem;
   &_hamburger {
     width: 25px;
     cursor: pointer;
+    display: none;
     @include media("<=phone") {
       width: 20px;
+      display: block;
     }
 
     span {
       margin-bottom: 0.3rem;
-      background: black;
+      background: rgb(37, 37, 37);
       height: 2px;
       width: 100%;
       display: block;

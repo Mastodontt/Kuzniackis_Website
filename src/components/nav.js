@@ -22,10 +22,13 @@ const Nav = () =>{
                             <p>About</p>
                         </Link>
                     </div>
-                    <div className="Nav_hamburger">
+                        <Link to="NavMobileMenu">
+                        <div className="Nav_hamburger">                       
                         <span></span>
                         <span></span>
                     </div>
+                        </Link>
+                    
                     <div className="Nav_logo">
                     <Link to="404">Santana</Link>
                     </div>

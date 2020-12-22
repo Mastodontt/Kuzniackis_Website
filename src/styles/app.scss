@@ -2,6 +2,7 @@
 @import "./Banner.scss";
 @import "./nav.scss";
 @import "./Website.scss";
+@import "./NavMobileMenu.scss";
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 html,
 a,
@@ -19,7 +20,7 @@ html {
   margin: 0;
   font-size: 16px;
   font-family: "Old Standard TT", serif;
-  color: black;
+  color: rgb(37, 37, 37);
   background-color: white;
 }
 
@@ -28,8 +29,8 @@ html {
   flex-direction: column;
 }
 a {
+  color: rgb(37, 37, 37);
   text-decoration: none;
-  color: black;
 }
 .container {
   width: 1560px;
