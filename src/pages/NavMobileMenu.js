@@ -5,16 +5,21 @@ import Layout from "../components/Layout"
 const NavMobileMenu = () =>{
     return(
         <Layout>
-            <ul className="container">
-                <li>
-                    All Prints
-                </li>
-                <li>
-                    Process
-                </li>
-                <li>
-                    About
-                </li>
+            <div className="container">
+            </div>
+            <ul className="Nav_container">
+                <div className="row rowNav">
+                    <li className="mobileNavItem">
+                        All Prints
+                    </li>
+                    <li className="mobileNavItem">
+                        Process
+                    </li>
+                    <li className="mobileNavItem">
+                        About
+                    </li>
+                </div>
+               
             </ul>
         </Layout>
     )

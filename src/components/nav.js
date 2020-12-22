@@ -30,10 +30,10 @@ const Nav = () =>{
                         </Link>
                     
                     <div className="Nav_logo">
-                    <Link to="404">Santana</Link>
+                    <Link to="/">Santana</Link>
                     </div>
                     <div className="Nav_Shop">
-                        <p>Sh</p>
+                        
                     </div>
                 </div>
             </div>

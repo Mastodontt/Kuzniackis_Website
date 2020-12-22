@@ -27,6 +27,8 @@ html {
 .Website {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  background-color: wheat;
 }
 a {
   color: rgb(37, 37, 37);
@@ -49,6 +51,9 @@ a {
   @include media("<=1080px") {
     width: 100%;
     min-width: 100%;
+  }
+  @include media("<=phone") {
+    width: 300px;
   }
   .row {
     display: flex;
