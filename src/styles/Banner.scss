@@ -1,3 +1,5 @@
+@import "./breakpoints.scss";
+
 .main {
   height: 100vh;
   display: flex;
@@ -23,6 +25,11 @@
   }
 
   .gatsby-image-wrapper {
-    width: 365px;
+    width: 350px;
+  }
+  @media (min-width: 1000px) {
+    .gatsby-image-wrapper {
+      width: 600px;
+    }
   }
 }

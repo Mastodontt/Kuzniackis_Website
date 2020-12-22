@@ -33,7 +33,7 @@ const Nav = () =>{
                     <Link to="/">Santana</Link>
                     </div>
                     <div className="Nav_Shop">
-                        
+                        sh
                     </div>
                 </div>
             </div>

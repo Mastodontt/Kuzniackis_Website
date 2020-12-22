@@ -8,7 +8,7 @@ import Img from "gatsby-image"
     query {
       Picture1: file(relativePath: { eq: "image0.jpeg" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 1600) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -19,10 +19,10 @@ import Img from "gatsby-image"
 
   
   return(
-    <section className="main">
+    <section className="container main">
       <div className="row">
-          
-          <Img fluid={data.Picture1.childImageSharp.fluid} /> 
+        <p> <Img fluid={data.Picture1.childImageSharp.fluid} /> </p>        
+        
           
       </div>
          
