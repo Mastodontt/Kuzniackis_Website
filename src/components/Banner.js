@@ -8,8 +8,8 @@ import Img from "gatsby-image"
     query {
       Picture1: file(relativePath: { eq: "image0.jpeg" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -21,9 +21,9 @@ import Img from "gatsby-image"
   return(
     <section className="main">
       <div className="row">
-          <p>
-          <Img fixed={data.Picture1.childImageSharp.fixed} /> 
-          </p>
+          
+          <Img fluid={data.Picture1.childImageSharp.fluid} /> 
+          
       </div>
          
           

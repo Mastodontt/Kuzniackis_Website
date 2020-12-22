@@ -27,7 +27,7 @@ const Nav = () =>{
                         <span></span>
                     </div>
                     <div className="Nav_logo">
-                    <Link to="404">Kuzniacki</Link>
+                    <Link to="404">Santana</Link>
                     </div>
                     <div className="Nav_Shop">
                         <p>Sh</p>
