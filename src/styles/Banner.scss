@@ -1,21 +1,28 @@
 .main {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: calc(var(--vh, 1vh) * 100);
-  background-color: green;
+  flex-direction: column;
   .row {
-    flex-direction: column;
+    width: 1560px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    .HomePic {
-    }
     h2 {
       font-size: 3rem;
       line-height: 4.2rem;
       z-index: 10;
-      mix-blend-mode: diffrence;
+      mix-blend-mode: difference;
     }
   }
   .firstPageContainer {
     height: 90vh;
+  }
+
+  .gatsby-image-wrapper {
+    width: 600px;
   }
 }

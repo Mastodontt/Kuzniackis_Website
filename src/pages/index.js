@@ -6,6 +6,7 @@ import Banner from "../components/Banner"
 
 import SEO from "../components/seo"
 import Layout from "../components/Layout"
+
 const IndexPage = () => {
 
   useEffect(() =>{
@@ -18,7 +19,10 @@ const IndexPage = () => {
     <SEO title="Home" />
     <Layout>
       <Banner/>
+     
     </Layout>
+   
+  
    
       
   </div>
