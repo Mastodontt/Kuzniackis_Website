@@ -31,6 +31,7 @@
 }
 
 .UnderLine {
+  font-size: 1.5rem;
   color: gray;
   border-bottom: 2px solid grey;
   cursor: pointer;
@@ -40,5 +41,16 @@
   }
 }
 
-.row2 {
+@keyframes myanimation {
+  0% {
+    transform: rotate(0) translateX(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) translateX(0%);
+    opacity: 1;
+  }
+}
+.Bimages {
+  animation: myanimation 3s forwards 250ms ease;
 }

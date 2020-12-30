@@ -8,6 +8,19 @@
   justify-content: center;
 }
 
+@keyframes showanimation {
+  0% {
+    transform: rotate(0) translateY(30%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(0) translateY(0%);
+    opacity: 1;
+  }
+}
+
 .navElements {
+  animation: showanimation 3s forwards 250ms ease;
   text-align: center;
 }

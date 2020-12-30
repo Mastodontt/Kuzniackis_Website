@@ -21,7 +21,7 @@ import Img from "gatsby-image"
   return(
     <section className="container main">
       <div className="row">
-        <p> <Img fluid={data.Picture1.childImageSharp.fluid} /> </p>        
+        <p className="Bimages"> <Img fluid={data.Picture1.childImageSharp.fluid} /> </p>        
         
           
       </div>

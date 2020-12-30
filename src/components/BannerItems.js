@@ -50,7 +50,7 @@ const BannerItems = () =>{
              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
              <p className="Button">Purchase a print</p>
          </div>  
-            <p> <Img fluid={data.Picture1.childImageSharp.fluid} /> </p> 
+            <p> <Img className="Bimages" fluid={data.Picture1.childImageSharp.fluid} /> </p> 
          </div>
          <div className="BannerItems">
             <div className="Bannertext">
@@ -58,7 +58,7 @@ const BannerItems = () =>{
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
                 <p className="Button">Purchase a print</p>
             </div>          
-            <p> <Img fluid={data.Picture2.childImageSharp.fluid} /> </p>
+            <p> <Img className="Bimages" fluid={data.Picture2.childImageSharp.fluid} /> </p>
          </div>
          <div className="BannerItems">
              
@@ -67,7 +67,7 @@ const BannerItems = () =>{
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
                 <p className="Button">Purchase a print</p>
         </div>          
-            <p> <Img fluid={data.Picture3.childImageSharp.fluid} /> </p>
+            <p> <Img className="Bimages" fluid={data.Picture3.childImageSharp.fluid} /> </p>
          </div>
     
        
