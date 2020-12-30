@@ -11,14 +11,14 @@ const Nav = () =>{
             <div className="container">
                 <div className="row v-center space-between">
                     <div className="Nav_Info">
-                        <Link to="404">
+                        <Link to="/">
                             <p>All Prints</p>
                          
                         </Link>
-                        <Link to="404">
+                        <Link to="/">
                             <p>Process</p>
                         </Link>
-                        <Link to="404">
+                        <Link to="About">
                             <p>About</p>
                         </Link>
                     </div>

@@ -4,18 +4,39 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  @media (min-width: 1080px) {
+    margin-top: 5rem;
+    & h1 {
+      font-size: 2.5rem;
+    }
+    & p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.bans {
+  order: 0;
 }
 .BannerItems {
   align-items: center;
   display: flex;
   flex-direction: column;
+  @media (min-width: 1080px) {
+    flex-direction: row;
+  }
+  margin-top: 2rem;
 }
 .Bannertext {
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  @media (min-width: 1080px) {
+    font-size: 2rem;
+  }
 }
 
 .Button {
@@ -53,4 +74,5 @@
 }
 .Bimages {
   animation: myanimation 3s forwards 250ms ease;
+  order: 1;
 }
