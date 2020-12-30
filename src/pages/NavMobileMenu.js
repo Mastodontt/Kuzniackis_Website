@@ -10,7 +10,10 @@ const NavMobileMenu = () =>{
                   <ul className="navElements">
                       <li className="navElement">All prints</li>
                       <li className="navElement">Process</li>
-                      <li className="navElement">About</li>
+                      <Link to="/About">
+                        <li className="navElement">About</li>
+                      </Link>
+                   
                   </ul>
               </div>
           </div>
