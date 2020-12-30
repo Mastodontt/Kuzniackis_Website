@@ -3,7 +3,7 @@ import React,{useEffect} from "react"
 import { Link } from "gatsby"
 import Nav from "../components/nav"
 import Banner from "../components/Banner"
-
+import BannerItems from "../components/BannerItems"
 import SEO from "../components/seo"
 import Layout from "../components/Layout"
 
@@ -16,10 +16,11 @@ const IndexPage = () => {
 
   return(
   <div className="Website">
-    <SEO title="Home" />
+  
     <Layout>
+      <SEO title="Home" />
       <Banner/>
-     
+      <BannerItems/>
     </Layout>
    
   
