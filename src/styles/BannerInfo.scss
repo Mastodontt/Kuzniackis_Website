@@ -3,13 +3,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
-
+.BannerItems {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
 .Bannertext {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .Button {
@@ -17,13 +23,22 @@
   background-color: grey;
   cursor: pointer;
   color: #fff;
+  font-size: 1.5rem;
+  &:hover,
+  :focus {
+    opacity: 0.7;
+  }
 }
 
 .UnderLine {
   color: gray;
   border-bottom: 2px solid grey;
   cursor: pointer;
-  &:hover {
+  &:hover,
+  :focus {
     opacity: 0.7;
   }
+}
+
+.row2 {
 }
