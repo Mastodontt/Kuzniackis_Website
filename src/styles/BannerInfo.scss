@@ -15,9 +15,6 @@
   }
 }
 
-.bans {
-  order: 0;
-}
 .BannerItems {
   align-items: center;
   display: flex;
@@ -31,12 +28,27 @@
 .Bannertext {
   font-size: 1.2rem;
   display: flex;
+  order: 1;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   @media (min-width: 1080px) {
     font-size: 2rem;
+  }
+}
+.BannertextRev {
+  font-size: 1.2rem;
+  display: flex;
+  order: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  order: 1;
+  @media (min-width: 1080px) {
+    font-size: 2rem;
+    order: 0;
   }
 }
 

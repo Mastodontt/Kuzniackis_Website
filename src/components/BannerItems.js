@@ -1,8 +1,22 @@
-import React from "react"
+import React ,{useState,useEffect}from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const BannerItems = () =>{
+
+  const [posts,setPosts] = useState([])
+
+  useEffect(() =>{
+    const getPosts = async () =>{
+      const response = await fetch('http://localhost:1337/posts');
+      const data = await response.json();
+      setPosts(data);
+    }
+     getPosts();
+   },[])
+
+   
+
 
     const data = useStaticQuery(graphql`
     query {
@@ -35,8 +49,13 @@ const BannerItems = () =>{
    `)
 
 
+       
+
    return(
+     
     <section className="container main">
+       
+     
       <div className="row2">
           <div className="BannerInfo"> 
             <h1>An exploration in color and texture.</h1>
@@ -44,7 +63,7 @@ const BannerItems = () =>{
             <p className="UnderLine">Learn More</p>
           </div>
          <div className="BannerItems">
-         <p className="bans"> <Img className="Bimages" fluid={data.Picture1.childImageSharp.fluid} /> </p> 
+         <p className="Bimages"  > <Img fluid={data.Picture1.childImageSharp.fluid} /> </p> 
          <div className="Bannertext">
          <h1>Canvas Drip / 1 of 3</h1>
              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
@@ -53,8 +72,8 @@ const BannerItems = () =>{
            
          </div>
          <div className="BannerItems">
-         <p> <Img className="Bimages" fluid={data.Picture2.childImageSharp.fluid} /> </p>
-            <div className="Bannertext">
+         <p className="Bimages"> <Img fluid={data.Picture2.childImageSharp.fluid} /> </p>
+            <div className="BannertextRev">
 
                 <h1>Canvas Drip / 2 of 3</h1>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
@@ -62,7 +81,7 @@ const BannerItems = () =>{
             </div>                  
          </div>
          <div className="BannerItems">
-         <p> <Img className="Bimages" fluid={data.Picture3.childImageSharp.fluid} /> </p>
+         <p className="Bimages" > <Img  fluid={data.Picture3.childImageSharp.fluid} /> </p>
          <div className="Bannertext">
                 <h1>Canvas Drip / 3 of 3</h1>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
@@ -72,12 +91,14 @@ const BannerItems = () =>{
          </div>
     
        
-       
+        
           
       </div>
          
-          
+      
     </section>
+
+  
 )
 }
 
