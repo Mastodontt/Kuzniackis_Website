@@ -1,0 +1,14 @@
+.footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footerItem {
+  padding: 0.7rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=footer.css.map */
