@@ -4,6 +4,8 @@ import Img from "gatsby-image"
 
 const BannerItems = () =>{
 
+
+  // do dokonczenia
   const [posts,setPosts] = useState([])
 
   useEffect(() =>{
