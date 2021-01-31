@@ -77,6 +77,13 @@
 @media (min-width: 1080px) {
   .Bannertext {
     font-size: 2rem;
+    width: 40vw;
+  }
+}
+
+@media (min-width: 1080px) {
+  .Bimages {
+    width: 40vw;
   }
 }
 
@@ -108,12 +115,6 @@
 .Button:hover,
 .Button :focus {
   opacity: 0.7;
-}
-
-.Bimagess {
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
 }
 
 .UnderLine {

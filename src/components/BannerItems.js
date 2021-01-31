@@ -65,7 +65,7 @@ const BannerItems = () =>{
             <p className="UnderLine">Learn More</p>
           </div>
          <div className="BannerItems">
-         <p className="Bimages"  > <Img fluid={data.Picture1.childImageSharp.fluid} /> </p> 
+         <div className="Bimages"  > <Img fluid={data.Picture1.childImageSharp.fluid} /> </div> 
          <div className="Bannertext">
          <h1>Canvas Drip / 1 of 3</h1>
              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
@@ -73,37 +73,22 @@ const BannerItems = () =>{
          </div>       
          </div>
          <div className="BannerItems">
-         <p className="Bimagess"  > <Img fluid={data.Picture2.childImageSharp.fluid} /> </p> 
-         <div className="BannertextReverse">
+         <div className="Bimagess"  > <Img fluid={data.Picture2.childImageSharp.fluid} /> </div> 
+         <div className="Bannertext">
          <h1>Canvas Drip / 2 of 3</h1>
              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
              <p className="Button">Purchase a print</p>
          </div>         
         </div>
         <div className="BannerItems">
-         <p className="Bimages"  > <Img fluid={data.Picture2.childImageSharp.fluid} /> </p> 
+         <div className="Bimages"  > <Img fluid={data.Picture3.childImageSharp.fluid} /> </div> 
          <div className="Bannertext">
          <h1>Canvas Drip / 3 of 3</h1>
              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
              <p className="Button">Purchase a print</p>
          </div>         
         </div>
-        <div className="BannerItems">
-         <p className="Bimages"  > <Img fluid={data.Picture2.childImageSharp.fluid} /> </p> 
-         <div className="Bannertext">
-         <h1>Canvas Drip / 3 of 3</h1>
-             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
-             <p className="Button">Purchase a print</p>
-         </div>         
-        </div>
-        <div className="BannerItems">
-         <p className="Bimages"  > <Img fluid={data.Picture2.childImageSharp.fluid} /> </p> 
-         <div className="Bannertext">
-         <h1>Canvas Drip / 3 of 3</h1>
-             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
-             <p className="Button">Purchase a print</p>
-         </div>         
-        </div>
+        
          
         
     
